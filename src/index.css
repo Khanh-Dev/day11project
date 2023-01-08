@@ -10,13 +10,10 @@ code {
     monospace;
 }
 
-.child {
+.container {
   font-size: 40px;
   background-color: rgb(149, 241, 188);
   padding: 15px;
-  position: relative;
-  top: 30px;
-
 }
 
 

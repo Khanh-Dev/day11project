@@ -54,17 +54,25 @@ import './index.css';
 // }
 
 class App extends Component {
-  state = {
-    left: '',
+  posi = {
     top: '',
+    left:'',
   }
-  handleClick = ({style}) => {
+
+
+
+  handleChange = (e) => {
+    let status1 = (Math.random() * 30) + 'rem'
+    let status2 = (Math.random() * 20) + 'rem'
+    e.target.style.position = 'relative'
+    e.target.style.top = status1
+    e.target.style.left = status2
 
   }
 
-  render (){
+  render () {
     return (
-      <span className='child'>30 Days with React</span>
+        <span className='container' onMouseEnter={this.handleChange}>Change</span>
     )
   }
 }
